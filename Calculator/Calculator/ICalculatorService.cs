@@ -20,6 +20,8 @@ namespace Calculator
         double Mul(double n1, double n2);
         [OperationContract]
         double Div(double n1, double n2);
+        [OperationContract]
+        double Compare(double n1, double n2);
 
     }
 

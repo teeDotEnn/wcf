@@ -14,14 +14,15 @@ namespace CalculatorClient
             CalculatorReference.CalculatorServiceClient client = new CalculatorReference.CalculatorServiceClient(); 
             string choice = "";
             
-            while (!choice.Equals("5"))
+            while (!choice.Equals("6"))
             {
                 Console.WriteLine("\t\tCalculator");
                 Console.WriteLine("1. Add");
                 Console.WriteLine("2. Sub");
                 Console.WriteLine("3. Mul");
                 Console.WriteLine("4. Div");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Compare");
+                Console.WriteLine("6. Exit");
                 Console.Write("\tEnter your choice: ");
                 choice = Console.ReadLine();
                 switch (choice)
@@ -41,6 +42,10 @@ namespace CalculatorClient
                     case "4":
                         LoadNumbers();
                         Console.WriteLine("The quotient is : " + client.Div(n1, n2));
+                        break;
+                    case "5":
+                        LoadNumbers();
+                        Console.WriteLine("The greater number is: " + client.Compare(n1, n2));
                         break;
                 }
             }

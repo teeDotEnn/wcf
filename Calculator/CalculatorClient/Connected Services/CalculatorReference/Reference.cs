@@ -38,6 +38,12 @@ namespace CalculatorClient.CalculatorReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculatorService/Div", ReplyAction="http://tempuri.org/ICalculatorService/DivResponse")]
         System.Threading.Tasks.Task<double> DivAsync(double n1, double n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculatorService/Compare", ReplyAction="http://tempuri.org/ICalculatorService/CompareResponse")]
+        double Compare(double n1, double n2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculatorService/Compare", ReplyAction="http://tempuri.org/ICalculatorService/CompareResponse")]
+        System.Threading.Tasks.Task<double> CompareAsync(double n1, double n2);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,14 @@ namespace CalculatorClient.CalculatorReference {
         
         public System.Threading.Tasks.Task<double> DivAsync(double n1, double n2) {
             return base.Channel.DivAsync(n1, n2);
+        }
+        
+        public double Compare(double n1, double n2) {
+            return base.Channel.Compare(n1, n2);
+        }
+        
+        public System.Threading.Tasks.Task<double> CompareAsync(double n1, double n2) {
+            return base.Channel.CompareAsync(n1, n2);
         }
     }
 }

@@ -34,5 +34,10 @@ namespace Calculator
             }
             return n1 / n2;
         }
+
+        public double Compare(double n1, double n2)
+        {
+            return n1 > n2?n1 : n2;
+        }
     }
 }
