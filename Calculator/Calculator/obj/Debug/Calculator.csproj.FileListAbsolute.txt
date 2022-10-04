@@ -1,0 +1,7 @@
+D:\wcf\New folder\wcf\Calculator\Calculator\bin\Calculator.dll.config
+D:\wcf\New folder\wcf\Calculator\Calculator\bin\Calculator.dll
+D:\wcf\New folder\wcf\Calculator\Calculator\bin\Calculator.pdb
+D:\wcf\New folder\wcf\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\wcf\New folder\wcf\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\wcf\New folder\wcf\Calculator\Calculator\obj\Debug\Calculator.dll
+D:\wcf\New folder\wcf\Calculator\Calculator\obj\Debug\Calculator.pdb

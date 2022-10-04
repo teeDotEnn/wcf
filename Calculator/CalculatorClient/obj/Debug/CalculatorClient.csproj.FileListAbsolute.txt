@@ -1,0 +1,8 @@
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\bin\Debug\CalculatorClient.exe.config
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\bin\Debug\CalculatorClient.exe
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\bin\Debug\CalculatorClient.pdb
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\obj\Debug\CalculatorClient.csproj.AssemblyReference.cache
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\obj\Debug\CalculatorClient.csproj.SuggestedBindingRedirects.cache
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\obj\Debug\CalculatorClient.csproj.CoreCompileInputs.cache
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\obj\Debug\CalculatorClient.exe
+D:\wcf\New folder\wcf\Calculator\CalculatorClient\obj\Debug\CalculatorClient.pdb
