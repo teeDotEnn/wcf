@@ -29,6 +29,9 @@ namespace Calculator
 
         public double Div(double n1, double n2)
         {
+            if(n2 == 0) {
+                return -1;
+            }
             return n1 / n2;
         }
     }

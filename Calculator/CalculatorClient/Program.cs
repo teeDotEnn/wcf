@@ -8,10 +8,12 @@ namespace CalculatorClient
 {
     internal class Program
     {
+        static double n1, n2;
         static void Main(string[] args)
         {
             CalculatorReference.CalculatorServiceClient client = new CalculatorReference.CalculatorServiceClient(); 
             string choice = "";
+            
             while (!choice.Equals("5"))
             {
                 Console.WriteLine("\t\tCalculator");
@@ -20,29 +22,36 @@ namespace CalculatorClient
                 Console.WriteLine("3. Mul");
                 Console.WriteLine("4. Div");
                 Console.WriteLine("5. Exit");
-                Console.WriteLine("\tEnter your choice: ");
+                Console.Write("\tEnter your choice: ");
                 choice = Console.ReadLine();
                 switch (choice)
                 {
                     case "1":
-                        Console.WriteLine("Enter Number 1: ");
-                        double n1 = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter Number 2: ");
-                        double n2 = double.Parse(Console.ReadLine());
-                        double n3 = client.Add(n1, n2);
-                        Console.WriteLine("The sum is : " + n3);
+                        LoadNumbers();
+                        Console.WriteLine("The sum is : " + client.Add(n1, n2)) ;
                         break;
                     case "2":
-
+                        LoadNumbers();
+                        Console.WriteLine("The difference is : " + client.Sub(n1, n2));
                         break;
                     case "3":
-
+                        LoadNumbers();
+                        Console.WriteLine("The product is : " + client.Mul(n1, n2));
                         break;
                     case "4":
-
+                        LoadNumbers();
+                        Console.WriteLine("The quotient is : " + client.Div(n1, n2));
                         break;
                 }
             }
+        }
+
+        static void LoadNumbers()
+        {
+            Console.WriteLine("Enter Number 1: ");
+            n1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Number 2: ");
+            n2 = double.Parse(Console.ReadLine());
         }
     }
 }
